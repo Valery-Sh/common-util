@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shop>
+    <books>
+        <!-- 
+            book 
+        -->
+        <book>First Book</book>
+        <book>Second Book</book>
+        <book/>
+        <pen>
+            <ink-pen>
+                <color>red</color>
+                <color>grin</color>
+            </ink-pen>    
+            <ball-pen attr1="attr1Value">
+                <color>blue</color>
+                <color>black</color>
+            </ball-pen>    
+        </pen>    
+    </books>
+</shop>

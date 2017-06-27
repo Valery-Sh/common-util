@@ -1206,8 +1206,6 @@ public class BaseProperties {
          * Returns a string representations of the array of all objects of type
          * {@link ValueObject}.
          * 
-         * 
-         *
          * @return a string representations of the array of all objects of type
          * {@link ValueObject}. If the internal collection is empty than 
          *  {@code null} is returned. If the internal collection has a single 

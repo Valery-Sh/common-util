@@ -1,6 +1,7 @@
 package org.vns.common.util.prefs.files;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -10,6 +11,7 @@ import java.util.prefs.Preferences;
 import org.vns.common.PathObject;
 //import org.vns.common.PathObject;
 import org.vns.common.RequestExecutor;
+import org.vns.common.files.FilePathObject;
 import org.vns.common.util.prefs.Storage;
 
 /**
@@ -28,6 +30,17 @@ public class FilePreferences extends AbstractPreferences {
 
     public enum Scope {
         HEADER, BOTTOM, SECTION, KEYVALUE, VALUE
+    }
+
+    public FilePreferences(String dirAbsolutePath) {
+        super(null, "");
+        
+        try {
+            SFS = FilePathObject.toPathObject(Paths.get(dirAbsolutePath).normalize());
+        } catch (IOException ex) {
+            Logger.getLogger(FilePreferences.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        init();
     }
     
     public FilePreferences(PathObject sfsRoot) {
