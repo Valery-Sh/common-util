@@ -24,9 +24,9 @@ public class TreeItemStringConverter extends StringConverter<TreeItem<Pair<Objec
     public static final String CLASS_NAME_ATTR = "ld:className";
     public static final String TAG_NAME_ATTR = "ld:tagName";
     public static final String IGNORE_ATTR = "ignore:treeItem";
-    public static final String REGSTERED_ATTR = "id:registered";
-    public static final String ISDOCKABLE_ATTR = "id:isdockable";
-    public static final String ISDOCKTARGET_ATTR = "id:isdocktarget";
+    public static final String REGSTERED_ATTR = "ld:registered";
+    public static final String ISDOCKABLE_ATTR = "ld:isdockable";
+    public static final String ISDOCKTARGET_ATTR = "ld:isdocktarget";
 
     @Override
     public String toString(TreeItem<Pair<ObjectProperty, Properties>> treeItem) {
